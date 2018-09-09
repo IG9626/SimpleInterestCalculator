@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner in = new Scanner (System.in);
+    System.out.println("exersize 3 ");
+    double r;
+    double a;
+    double t;
+    double p;
+    System.out.println("enter the intrist(Ex: .05):");
+    r = in.nextDouble();
+    t = 0.00;
+    System.out.println("enter the principal:");
+    p = in.nextDouble();
+    while(t<4){
+      a = p*(1+r*t);
+      System.out.println("the balance of the account after "+ t +" years is:"+ a +"\n");
+      t= t +1.00;
+      }
+    r = (1.05);
+  }
+}
